@@ -37,7 +37,7 @@ introduction ="""
          migration incidents based on input parameters. """
 
 if "Data Exploration (EDA)" in selected_sections:
-    st.write("""To the right, you will find a menu of user inputs where you can explore and analyze the historical data related to missing migrants. 
+    st.write("""To the left you will find a retractable menu of inputs where you can explore and analyze the historical data related to missing migrants. 
     You can filter the data based on different criteria such as location, category, number of people, gender, and more. This analysis will help you 
     gain insights into the patterns and characteristics of incidents involving missing migrants. Additionally, you can visualize the main causes of 
     incidents in various migration routes. """)
@@ -95,7 +95,7 @@ if "Data Exploration (EDA)" in selected_sections:
 # Check if "Modeling" is in the selected sections
 elif "Modeling" in selected_sections:
     # Header
-    st.write("To the right you will see a menu of user inputs where you can input the time and migration route you are planning on taking, this will then output an estimation of number of incidents based on the historicals. To the right of this timeseries you will also see the main causes of death in the migration route")
+    st.write("To the left you will see a retractable menu of user inputs where you can select the time and migration route you are planning on monitoring, this will then output an estimation of number of incidents based on the historicals. To the right of this timeseries you will also see the main causes of death in the migration route")
     # Sidebar
     st.sidebar.header("User Inputs")
     planned_migration_date = st.sidebar.date_input("Input planned migration date", value="today", min_value=None, max_value=None, format="YYYY-MM-DD")
