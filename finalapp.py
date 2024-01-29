@@ -20,7 +20,7 @@ print(column_names)
 st.set_page_config(page_title="Migrant Web App", page_icon=":tada:", layout="wide")
 
 # Create a multiselect for navigation
-selected_sections = st.sidebar.selectbox("Select Sections", ["Introduction","Data Exploration (EDA)", "Modeling"])
+selected_sections = st.sidebar.selectbox("Select Sections", ["Introduction", "Modeling"])
 
 introduction ="""
         
