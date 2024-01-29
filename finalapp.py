@@ -208,32 +208,6 @@ elif "Modeling" in selected_sections:
     # Show the interactive plot
     col1.plotly_chart(fig)
 
-    # Create a time slider
-    #time_range = col2.slider("Select a time range", 0, 14, (0, 23))
- 
-    # Update the datetime slider based on the selected time range
-    #start_date = datetime(2014, 1, 1, time_range[0])
-    #end_date = datetime(2025, 12, 30)
-    #end_date = start_date + timedelta(hours=time_range[1] - time_range[0])
- 
-    # selected_date = slider_placeholder.slider(
-    #     "Select a date range",
-    #     min_value=start_date,
-    #     max_value=end_date,
-    #     value=(start_date, end_date),
-    #     step=timedelta(hours=1),
-    # )
-
-    #link to slider code i found https://docs.kanaries.net/topics/Python/streamlit-datetime-slider
-
-    #visualizing COD
-    #col2.title('Cause of Death per migration route')
-
-    # Creates route selection dropdown
-    #migration_routes = migrant_App['migration route'].unique()
-    #commented out this dropdown and set up the cause of death to be determined by the selection of route in the user input side menu
-    #selected_route = st.selectbox('Please Select a Migration Route', migration_routes)
-
     # Filters the data based on the selected migration route
     filtered_data_ts = timeseriesdf[timeseriesdf['migration route'] == migration_route]
     # filtered_data = migrant_App[migrant_App['cause of death category'] == cause_of_death]
