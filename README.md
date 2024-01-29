@@ -4,7 +4,7 @@
 This project was conducted by Daniel Wright, Leticia Montilla, and Teri Nyugen-Shank of the Penn State University MPS DAAN program.
 
 
-**Access the application at this link:     https://final-app-ngjaqu58ptjqhqdhrippyj.streamlit.app/ **
+**Access the application at this link:     https://internation-migratory-analysis-tvgoqjc8dxjyc59mnfm4w4.streamlit.app/ **
 
 
 The purpose of our study is to help offset migratory fatalities using machine learning, specifically a time series model to predict and prevent seasonal deaths during internation migration.
