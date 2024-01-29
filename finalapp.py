@@ -45,14 +45,14 @@ if "Data Exploration (EDA)" in selected_sections:
     # Sidebar
     st.sidebar.header("User Inputs")
     incident_year = st.sidebar.slider("Select Incident Year", 2014, 2023)
-    region_of_origin = st.sidebar.selectbox("Select Region of Origin", migrant_App["region of origin group"].unique())
+    region_of_origin = st.sidebar.selectbox("Select Region of Origin", migrant_App["region of origin"].unique())
     number_of_males = st.sidebar.number_input("Number of Males", min_value=0)
 
     # Main content
     st.header("Migrant Data Analysis")
 
     # Group data by "Region of Origin"
-    grouped_data = migrant_App.groupby("region of origin group").agg({
+    grouped_data = migrant_App.groupby("region of origin").agg({
         "number of males": "sum",
         "number of females": "sum",
         "number of children": "sum",
@@ -74,7 +74,7 @@ if "Data Exploration (EDA)" in selected_sections:
 
     # Filter data based on user inputs
     filtered_data = migrant_App[(migrant_App["incident year"] == incident_year) &
-                            (migrant_App["region of origin group"] == region_of_origin) &
+                            (migrant_App["region of origin"] == region_of_origin) &
                             (migrant_App["number of males"] == number_of_males)]
 
     if not filtered_data.empty:
